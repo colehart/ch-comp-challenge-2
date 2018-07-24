@@ -80,19 +80,26 @@ main {
   grid-column: 1 / 5;
   background: rgb(239, 239, 239);
   display: flex;
-  flex-flow: wrap;
-  align-items: flex-start;
+  justify-content: center;
   color: #585563;
-  padding: 0 0 1rem 1rem;
+  padding-bottom: 1rem;
 }
 
-main h1{
+.article-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+}
+
+.article-container h1{
   width: 100vw;
   padding-left: 1rem;
   color: dimgray;
 }
 
-main article {
+.article-container article {
   background: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 15rem;
@@ -184,29 +191,39 @@ main article {
 
 @media screen and (max-width: 527px) {
 
-header {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login {
+    align-self: center;
+    justify-content: center;
+  }
+
+  .login-icon {
+    margin-left: 0;
+  }
+
+  .logo img {
+    margin-left: 0;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+
+  .article-container {
+    justify-content: center;
+  }
+
 }
 
-.login {
-  align-self: center;
-  justify-content: center;
-}
+@media screen and (max-width: 853px) {
 
-.login-icon {
-  margin-left: 0;
-}
-
-.logo img {
-  margin-left: 0;
-}
-
-.nav {
-  flex-direction: column;
-}
-
-main {
-  justify-content: center;
+ .article-container {
+    justify-content: center;
+    /*align-items: center;*/
+  }
 }
