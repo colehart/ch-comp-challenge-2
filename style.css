@@ -1,7 +1,6 @@
 body {
   display: grid;
   margin: 0;
-  padding: 1rem 0 1rem 0;
   width: 100vw;
   height: 100%;
   grid-template-rows: 20% 1fr;
@@ -78,14 +77,14 @@ main {
   background: rgb(239, 239, 239);
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
   align-items: flex-start;
   color: #585563;
+  padding: 0 0 1rem 1rem;
 }
 
 main h1{
   width: 100vw;
-  padding-left: 2rem;
+  padding-left: 1rem;
   color: dimgray;
 }
 
