@@ -9,6 +9,7 @@ body {
   grid-column-gap: 1rem;
   font-family: 'Roboto';
 }
+
 header {
   display: flex;
   grid-column: 1 / 5;
@@ -19,8 +20,10 @@ header {
   align-content: baseline;
   background: rgb(43, 43, 43);
   padding: 1rem 2rem 0;
+  margin: 0;
 }
-#login {
+
+.login {
   align-self: flex-start;
   display: flex;
   align-items: center;
@@ -29,8 +32,8 @@ header {
   color: rgb(38, 181, 252);
   width: 100vw;
   justify: right;
-
 }
+
 header img {
   height: 1.5rem;
   width: 1.5rem;
@@ -38,31 +41,38 @@ header img {
   align-self: center;
   margin: 1rem .5rem 1rem 1rem;
 }
-#login p {
+
+.login p {
   font-size: 10pt;
 }
-#triangle {
+
+.triangle {
   height: .75rem;
   width: .75rem;
 }
-#nav {
+
+.nav {
   display: flex;
   order: 1;
   color: grey;
 }
-#active {
+
+.active {
   color: white;
 }
-#logo {
+
+.logo {
   display: flex;
   align-items: center;
 }
-#logo img {
+
+.logo img {
   height: 2.25rem;
   width: auto;
   align-self: center
   padding: .5rem;
 }
+
 main {
   grid-column: 1 / 5;
   background: rgb(239, 239, 239);
@@ -72,11 +82,13 @@ main {
   align-items: flex-start;
   color: #585563;
 }
+
 main h1{
   width: 100vw;
   padding-left: 2rem;
   color: dimgray;
 }
+
 main article {
   background: rgb(255, 255, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -84,8 +96,9 @@ main article {
   max-height: 28rem;
   margin: .5rem;
 }
+
 .top {
-  background-image: url("https://bit.ly/2IVOfJy");
+  background-image: url("images/people.jpeg");
   background-position: cover;
   background-color: grey;
   background-blend-mode: multiply;
@@ -95,10 +108,12 @@ main article {
   height: 7rem;
   padding: .5rem;
 }
+
 .top img{
   height: 5rem;
   width: 5rem;
 }
+
 .view-group {
   display: flex;
   flex-direction: column;
@@ -109,9 +124,11 @@ main article {
   color: white;
   padding: 2.5rem 2rem;
 }
+
 .view-group p {
   padding-bottom: 0;
   margin: 0;
+
   font-size: 10pt;
 }
 .view-group h3 {
@@ -119,19 +136,23 @@ main article {
   padding-top: 0;
   margin: 0;
 }
+
 .bottom {
   margin: 0;
   padding: 1rem;
   color: gray;
 }
+
 .bottom h4 {
   margin: 0;
 }
+
 .bottom p {
   margin: 0;
   font-size: 10pt;
   color: silver;
 }
+
 .bottom aside {
   margin-top: 1rem;
   padding: .5rem ;
@@ -140,13 +161,20 @@ main article {
   hyphens: auto;
   word-wrap: break-word;
 }
+
 .bottom h5 {
   font-size: 8pt;
   margin-top: 1rem;
   margin-bottom: 0;
 }
+
 .bottom h2 {
   margin-top: 0;
   margin-bottom: 0;
   color: deepskyblue;
+}
+
+.placeholder {
+  flex: auto;
+  max-width: 15rem;
 }
